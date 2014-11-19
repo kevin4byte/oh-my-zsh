@@ -7,6 +7,7 @@
 # To Public License, Version 2, as published by Sam Hocevar. See
 # http://sam.zoy.org/wtfpl/COPYING for more details.
 
+ZSH=/Users/xiaowl/.oh-my-zsh/
 THEMES_DIR="$ZSH/themes"
 FAVLIST="${HOME}/.zsh_favlist"
 source $ZSH/oh-my-zsh.sh
@@ -85,6 +86,7 @@ do
     * ) usage ;; # Default.
   esac
 done
+echo $THEMES_DIR
 
 if [[ -z $Option ]]; then
     if [[ -z $1 ]]; then
